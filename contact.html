@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Daniel Rodríguez Vázquez</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script defer src="assets/script.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+<nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-lg z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                Daniel R.V
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link relative">
+                    Inicio
+                </a>
+                <a href="about.html" class="nav-link relative">
+                    Sobre mí
+                </a>
+                <a href="skills.html" class="nav-link relative">
+                    Habilidades
+                </a>
+                <a href="contact.html" class="nav-link active relative">
+                    Contacto
+                    <span class="absolute -bottom-2 left-0 w-full h-1 bg-green-500 rounded-full"></span>
+                </a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-gray-800">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+            <a href="index.html" class="block py-2 nav-link">Inicio</a>
+            <a href="about.html" class="block py-2 nav-link">Sobre mí</a>
+            <a href="skills.html" class="block py-2 nav-link">Habilidades</a>
+            <a href="contact.html" class="block py-2 nav-link active">
+                Contacto
+                <span class="inline-block w-2 h-2 bg-green-500 rounded-full ml-2"></span>
+            </a>
+        </div>
+    </div>
+</nav>
+
+    <!-- Contact Section -->
+    <section class="min-h-screen bg-gradient-to-br from-green-500 via-white to-gray-800 py-20 px-6 pt-32">
+        <div class="max-w-4xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                    📬 ¡Hablemos!
+                </h1>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    ¿Tienes un proyecto en mente? ¿Quieres colaborar? ¡Me encantaría conocer tu propuesta!
+                </p>
+            </div>
+
+            <!-- Contact Methods Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                
+                <!-- Gmail -->
+                <a href="mailto:danielrodriguez@gmail.com?subject=Contacto desde tu portfolio&body=Hola Daniel,%0D%0A%0D%0AMe gustaría ponerme en contacto contigo para..." 
+                   class="contact-card group bg-white/90 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-white/50">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fab fa-google text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Gmail</h3>
+                        <p class="text-gray-600 mb-4">Envíame un email directamente</p>
+                        <span class="text-red-600 font-semibold group-hover:underline">
+                            danielrodriguez@gmail.com
+                        </span>
+                    </div>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/daniel-rodríguez-vázquez1" target="_blank" rel="noopener noreferrer"
+                   class="contact-card group bg-white/90 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-white/50">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fab fa-linkedin-in text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">LinkedIn</h3>
+                        <p class="text-gray-600 mb-4">Conectemos profesionalmente</p>
+                        <span class="text-blue-600 font-semibold group-hover:underline">
+                            Ver perfil
+                        </span>
+                    </div>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://api.whatsapp.com/send/?phone=34601726229&text=Hola+Daniel%2C+he+visto+tu+portfolio+y+me+gustar%C3%ADa+contactar+contigo&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"
+                   class="contact-card group bg-white/90 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-white/50">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fab fa-whatsapp text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">WhatsApp</h3>
+                        <p class="text-gray-600 mb-4">Conversación rápida</p>
+                        <span class="text-green-600 font-semibold group-hover:underline">
+                            +34 601 72 62 29
+                        </span>
+                    </div>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/DaniRV19" target="_blank" rel="noopener noreferrer"
+                   class="contact-card group bg-white/90 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-white/50">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fab fa-github text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">GitHub</h3>
+                        <p class="text-gray-600 mb-4">Revisa mis proyectos</p>
+                        <span class="text-gray-800 font-semibold group-hover:underline">
+                            Ver repositorios
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Teléfono -->
+                <a href="tel:+34600123456"
+                   class="contact-card group bg-white/90 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-white/50">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-phone text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Teléfono</h3>
+                        <p class="text-gray-600 mb-4">Llamada directa</p>
+                        <span class="text-purple-600 font-semibold group-hover:underline">
+                            +34 601 72 62 29
+                        </span>
+                    </div>
+                </a>
+
+                <!-- CV Download -->
+                <a href="cv/CV_Daniel_Rodriguez.pdf" download
+                   class="contact-card group bg-white/90 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-white/50">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-download text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Descargar CV</h3>
+                        <p class="text-gray-600 mb-4">Mi currículum completo</p>
+                        <span class="text-orange-600 font-semibold group-hover:underline">
+                            Descargar PDF
+                        </span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Additional Info -->
+            <div class="bg-white/90 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/50">
+                <div class="text-center">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                        <i class="fas fa-clock text-green-500 mr-3"></i>
+                        Disponibilidad
+                    </h2>
+                    <div class="grid md:grid-cols-3 gap-6 text-gray-700">
+                        <div>
+                            <h3 class="font-semibold mb-2">⏰ Horario</h3>
+                            <p>Lunes a Viernes<br>8:00 - 18:00 </p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-2">📍 Ubicación</h3>
+                            <p>Sevilla, España<br>Disponible para presencial y remoto</p><br>Abierto a propuestas
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-2">💬 Idiomas</h3>
+                            <p>Español (Nativo)<br>Inglés (Intermedio)<br>Francés (Intermedio)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Columna 1: Logo y descripción -->
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold">Daniel R.V</h3>
+                    <p class="text-gray-300">Desarrollador de aplicaciones web apasionado por crear soluciones digitales innovadoras y funcionales.</p>
+                    <div class="flex space-x-4 pt-2">
+                        <a href="https://www.linkedin.com/in/daniel-rodríguez-vázquez1" target="_blank" rel="noopener noreferrer" class="text-white hover:text-green-400 transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="https://github.com/DaniRV19" target="_blank" rel="noopener noreferrer" class="text-white hover:text-green-400 transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Columna 2: Enlaces rápidos -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-green-400 transition-colors">Inicio</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-green-400 transition-colors">Sobre mí</a></li>
+                        <li><a href="skills.html" class="text-gray-300 hover:text-green-400 transition-colors">Habilidades</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-green-400 transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 3: Contacto -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Contacto directo</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-green-400"></i>
+                            <a href="mailto:danielrodriguez@gmail.com" class="text-gray-300 hover:text-green-400 transition-colors">danielrodriguez@gmail.com</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2 text-green-400"></i>
+                            <a href="tel:+34600123456" class="text-gray-300 hover:text-green-400 transition-colors">+34 600 123 456</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-green-400"></i>
+                            <span class="text-gray-300">Sevilla, España</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Línea divisoria -->
+            <div class="border-t border-gray-700 my-8"></div>
+            
+            <!-- Copyright -->
+            <div class="text-center text-gray-400">
+                <p>&copy; 2025 Daniel Rodríguez Vázquez. Todos los derechos reservados.</p>
+                <p class="mt-2 text-sm">Diseñado con <i class="fas fa-heart text-green-500"></i> y mucho café</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Animación de entrada para las tarjetas
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.contact-card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }, index * 100);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(card);
+            });
+        });
+
+        // Efecto de click para copiar email
+        document.querySelector('a[href^="mailto:"]').addEventListener('click', function(e) {
+            const email = 'danielrodriguez@gmail.com'; // Reemplaza con tu email real
+            
+            // Intentar copiar al portapapeles
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(email).then(() => {
+                    showNotification('📧 Email copiado al portapapeles');
+                });
+            }
+        });
+
+        // Función para mostrar notificaciones
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.className = 'fixed top-20 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 transform translate-x-full transition-transform duration-300';
+            notification.textContent = message;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+            
+            setTimeout(() => {
+                notification.style.transform = 'translateX(full)';
+                setTimeout(() => {
+                    notification.remove();
+                }, 300);
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

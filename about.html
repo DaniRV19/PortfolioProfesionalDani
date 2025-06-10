@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí - Daniel Rodríguez Vázquez</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script defer src="assets/script.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+<nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-lg z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                Daniel R.V
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link relative">
+                    Inicio
+                </a>
+                <a href="about.html" class="nav-link active relative">
+                    Sobre mí
+                    <span class="absolute -bottom-2 left-0 w-full h-1 bg-green-500 rounded-full"></span>
+                </a>
+                <a href="skills.html" class="nav-link relative">
+                    Habilidades
+                </a>
+                <a href="contact.html" class="nav-link relative">
+                    Contacto
+                </a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-gray-800">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+            <a href="index.html" class="block py-2 nav-link">Inicio</a>
+            <a href="about.html" class="block py-2 nav-link active">
+                Sobre mí
+                <span class="inline-block w-2 h-2 bg-green-500 rounded-full ml-2"></span>
+            </a>
+            <a href="skills.html" class="block py-2 nav-link">Habilidades</a>
+            <a href="contact.html" class="block py-2 nav-link">Contacto</a>
+        </div>
+    </div>
+</nav>
+
+    <!-- About Section -->
+    <section id="sobremi" class="bg-gray-100 text-gray-800 py-24 px-6 pt-32">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <!-- Foto con efecto -->
+            <div class="relative group">
+                <img src="foto.jpg" alt="Daniel Rodríguez"
+                     class="rounded-2xl w-full max-w-sm mx-auto shadow-xl transform group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-green-500/20 rounded-2xl blur-sm scale-105 opacity-0 transition duration-500"></div>
+            </div>
+
+            <!-- Texto descriptivo -->
+            <div>
+                <h2 class="text-4xl font-bold mb-4 relative inline-block after:block after:w-24 after:h-1 after:bg-green-500 after:mt-2">
+                    Sobre mí
+                </h2>
+                <p class="text-lg leading-relaxed mb-4 text-gray-700">
+                    ¡Hola! Soy <strong>Daniel Rodríguez Vázquez</strong>, desarrollador de aplicaciones web con una fuerte pasión por el deporte y el trabajo en equipo. Me defino como una persona <strong>extrovertida, proactiva, resolutiva</strong> y con capacidad de liderazgo. Siempre busco el mejor rendimiento tanto individual como colectivo.
+                </p>
+                <p class="italic text-green-600 text-md mb-6">"Solucionar problemas es mi zona de confort."</p>
+
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-green-500 text-white px-4 py-2 rounded-full shadow hover:scale-105 transition">Desarrollador Web</span>
+                    <span class="bg-gray-600 text-white px-4 py-2 rounded-full shadow hover:scale-105 transition">Amante del deporte</span>
+                    <span class="bg-gray-800 text-white px-4 py-2 rounded-full shadow hover:scale-105 transition">Resolutivo</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="mt-20">
+            <h3 class="text-3xl font-semibold mb-10 text-center">Formación y Experiencia</h3>
+            <div class="relative border-l-4 border-green-500 ml-4 space-y-10">
+                <div class="ml-6">
+                    <div class="absolute w-4 h-4 bg-green-500 rounded-full -left-8 top-0"></div>
+                    <h4 class="text-xl font-bold">Máster en COBOL HOST + CAJAMAR</h4>
+                    <span class="text-sm text-gray-500">ViewNext · 2025</span>
+                    <p class="text-gray-700 mt-2">Formación especializada en programación COBOL para entornos bancarios con integración en sistemas de Cajamar.</p>
+                </div>
+
+                <div class="ml-6">
+                    <div class="absolute w-4 h-4 bg-green-500 rounded-full -left-8 top-0"></div>
+                    <h4 class="text-xl font-bold">Grado Superior en Desarrollo de Aplicaciones Web</h4>
+                    <span class="text-sm text-gray-500">Ilerna Sevilla · 2023 - 2025</span>
+                    <p class="text-gray-700 mt-2">Formación técnica especializada en Laravel, Vue, MySQL, PHP, y JavaScript.</p>
+                </div>
+
+                <div class="ml-6">
+                    <div class="absolute w-4 h-4 bg-green-500 rounded-full -left-8 top-0"></div>
+                    <h4 class="text-xl font-bold">Bachillerato de Ciencias Tecnológicas</h4>
+                    <span class="text-sm text-gray-500">I.E.S Ramón del Valle Inclán (Sevilla) · 2021 - 2023</span>
+                    <p class="text-gray-700 mt-2">Enfoque en matemáticas, física y tecnología, desarrollando bases sólidas para el ámbito del desarrollo.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="mt-20">
+            <h3 class="text-3xl font-semibold mb-10 text-center">Soft Skills</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow hover:shadow-lg transition transform hover:-translate-y-1 text-center">
+                    <div class="text-4xl mb-2">🔥</div>
+                    <p class="text-gray-700 font-medium">Pasión por aprender</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow hover:shadow-lg transition transform hover:-translate-y-1 text-center">
+                    <div class="text-4xl mb-2">🤝</div>
+                    <p class="text-gray-700 font-medium">Trabajo en equipo</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow hover:shadow-lg transition transform hover:-translate-y-1 text-center">
+                    <div class="text-4xl mb-2">🚀</div>
+                    <p class="text-gray-700 font-medium">Proactividad</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow hover:shadow-lg transition transform hover:-translate-y-1 text-center">
+                    <div class="text-4xl mb-2">🎯</div>
+                    <p class="text-gray-700 font-medium">Enfoque a objetivos</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow hover:shadow-lg transition transform hover:-translate-y-1 text-center">
+                    <div class="text-4xl mb-2">🧠</div>
+                    <p class="text-gray-700 font-medium">Pensamiento analítico</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow hover:shadow-lg transition transform hover:-translate-y-1 text-center">
+                    <div class="text-4xl mb-2">📢</div>
+                    <p class="text-gray-700 font-medium">Buena comunicación</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CV Download Section -->
+        <section class="py-20 bg-white text-center mt-20 rounded-2xl shadow-lg">
+            <h2 class="text-3xl font-bold mb-8">¿Quieres conocerme más?</h2>
+            <p class="text-lg mb-8 text-gray-700">Descarga mi currículum actualizado y descubre más sobre mi experiencia.</p>
+
+            <a href="cv/CV_Daniel_Rodriguez.pdf" download class="inline-block px-8 py-4 text-white font-semibold bg-green-500 rounded-full shadow-lg hover:shadow-xl hover:bg-green-600 transition duration-300 transform hover:-translate-y-1 hover:scale-105">
+                <i class="fas fa-download mr-2"></i> Descargar CV
+            </a>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Columna 1: Logo y descripción -->
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold">Daniel R.V</h3>
+                    <p class="text-gray-300">Desarrollador de aplicaciones web apasionado por crear soluciones digitales innovadoras y funcionales.</p>
+                    <div class="flex space-x-4 pt-2">
+                        <a href="https://www.linkedin.com/in/daniel-rodríguez-vázquez1" target="_blank" rel="noopener noreferrer" class="text-white hover:text-green-400 transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="https://github.com/DaniRV19" target="_blank" rel="noopener noreferrer" class="text-white hover:text-green-400 transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Columna 2: Enlaces rápidos -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-green-400 transition-colors">Inicio</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-green-400 transition-colors">Sobre mí</a></li>
+                        <li><a href="skills.html" class="text-gray-300 hover:text-green-400 transition-colors">Habilidades</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-green-400 transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 3: Contacto -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Contacto</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-green-400"></i>
+                            <a class="text-gray-300 hover:text-green-400 transition-colors">danielrvazquez190805@gmail.com</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2 text-green-400"></i>
+                            <span class="text-gray-300 hover:text-green-400">+34 601 72 62 29</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-green-400"></i>
+                            <span class="text-gray-300 hover:text-green-400">Sevilla, España</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Línea divisoria -->
+            <div class="border-t border-gray-700 my-8"></div>
+            
+            <!-- Copyright -->
+            <div class="text-center text-gray-400">
+                <p>&copy; 2025 Daniel Rodríguez Vázquez. Todos los derechos reservados.</p>
+                <p class="mt-2 text-sm">Diseñado con <i class="fas fa-heart text-green-500"></i> y mucho café</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
