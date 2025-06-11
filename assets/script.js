@@ -63,7 +63,8 @@ function initSkills() {
         {name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', desc: 'Sistema de control de versiones distribuido.'},
         {name: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', desc: 'Plataforma para alojar y colaborar en código.'},
         {name: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg', desc: 'Herramienta de diseño colaborativo para UI.'},
-        {name: 'Laravel', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png', desc: 'Framework PHP elegante y potente.'}
+        {name: 'Laravel', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png', desc: 'Framework PHP elegante y potente.'},
+        {name: 'Vue.js', icon: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg', desc: 'Framework progresivo de JavaScript para construir interfaces de usuario.'}
     ];
 
     populateSkills(languages, 'languages-grid');
