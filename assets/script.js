@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initFormValidation();
     initKeyboardModalClose();
     initLazyLoading();
+    initProjects();
 });
 
 // ===========================
@@ -207,4 +208,71 @@ function initLazyLoading() {
     });
 
     document.querySelectorAll('img[data-src]').forEach(img => imageObserver.observe(img));
+}
+
+
+
+
+
+
+
+
+
+
+function initProjects() {
+    const grid = document.getElementById('projects-grid');
+    if (!grid) return;
+
+    const projects = [
+        {
+            name: 'TennisArena',
+            img: 'https://yourdomain.com/images/tennisarena.png',
+            desc: 'Aplicación web para gestionar torneos de tenis con login, perfiles y dashboard.',
+            url: 'https://github.com/tuusuario/tennisarena'
+        },
+        {
+            name: 'SaborFusion',
+            img: 'https://yourdomain.com/images/saborfusion.png',
+            desc: 'Tienda online de sobres mágicos para preparar comidas instantáneas.',
+            url: 'https://saborfusion.com'
+        },
+        {
+            name: 'OC Modus',
+            img: 'https://yourdomain.com/images/ocmodus.png',
+            desc: 'Marca de productos veganos con tienda y plataforma de gestión.',
+            url: 'https://ocmodus.com'
+        }
+        // Añade más proyectos aquí...
+    ];
+
+    projects.forEach(project => {
+        const card = document.createElement('div');
+        card.className = 'bg-white p-5 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition cursor-pointer text-center';
+        card.innerHTML = `
+            <img src="${project.img}" alt="${project.name}" class="mx-auto mb-4 rounded-lg max-h-40 object-contain" loading="lazy" />
+            <h3 class="text-xl font-semibold mb-2">${project.name}</h3>
+            <p class="text-gray-600 mb-3 line-clamp-3">${project.desc}</p>
+            <button class="text-blue-600 hover:underline focus:outline-none">Más info</button>
+        `;
+        card.querySelector('button').addEventListener('click', () => openProjectModal(project));
+        grid.appendChild(card);
+    });
+
+    document.getElementById('closeProjectModal').addEventListener('click', closeProjectModal);
+    document.getElementById('projectModal').addEventListener('click', e => {
+        if (e.target.id === 'projectModal') closeProjectModal();
+    });
+}
+
+function openProjectModal(project) {
+    document.getElementById('projectTitle').textContent = project.name;
+    document.getElementById('projectDesc').textContent = project.desc;
+    const link = document.getElementById('projectLink');
+    link.href = project.url;
+    link.textContent = 'Ver proyecto';
+    document.getElementById('projectModal').classList.remove('hidden');
+}
+
+function closeProjectModal() {
+    document.getElementById('projectModal').classList.add('hidden');
 }

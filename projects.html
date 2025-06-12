@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Proyectos Destacados</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script defer src="assets/script.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-gray-800">
+                    Daniel R.V
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link active relative">
+                        Inicio
+                    </a>
+                    <a href="about.html" class="nav-link relative">
+                        Sobre mí
+                    </a>
+                    <a href="skills.html" class="nav-link relative">
+                        Habilidades
+                    </a>
+                    <a href="projects.htmll" class="nav-link relative">
+                        Proyectos
+                        <span class="absolute -bottom-2 left-0 w-full h-1 bg-green-500 rounded-full"></span>
+                    </a>
+                    <a href="contact.html" class="nav-link relative">
+                        Contacto
+                    </a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-800">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 nav-link active">
+                    Inicio
+                    <span class="inline-block w-2 h-2 bg-green-500 rounded-full ml-2"></span>
+                </a>
+                <a href="about.html" class="block py-2 nav-link">Sobre mí</a>
+                <a href="skills.html" class="block py-2 nav-link">Habilidades</a>
+                <a href="projects.htmll" class="nav-link relative">
+                    Proyectos
+                    <span class="inline-block w-2 h-2 bg-green-500 rounded-full ml-2"></span>
+                </a>
+                <a href="contact.html" class="block py-2 nav-link">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN PROYECTOS -->
+    <section class="container mx-auto px-6 pt-32 pb-32">
+        <h1 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text animate-fade-in-up">Proyectos Destacados</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+            <!-- PROYECTO 1 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-2xl transition hover:-translate-y-2 animate-fade-in-up">
+                <div class="relative">
+                    <img src="tennis-court.jpg" alt="TennisArena" class="w-full h-56 object-cover transition group-hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2">TennisArena</h3>
+                    <p class="text-gray-600 mb-4">Gestor completo de torneos de tenis desarrollado en Laravel, Alpine.js, SQLite y Tailwind. Permite la gestión completa de jugadores, torneos y partidos.</p>
+                    <div class="flex justify-between items-center">
+                        <a href="https://github.com/DaniRV19/TennisArena.git" class="text-green-500 font-semibold hover:underline"><i class="fas fa-globe mr-1"></i> Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROYECTO 2 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-2xl transition hover:-translate-y-2 animate-fade-in-up delay-100">
+                <div class="relative">
+                    <img src="SaborFusion_logo.png" alt="SaborFusion" class="w-full h-56 object-cover transition group-hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2">SaborFusion</h3>
+                    <p class="text-gray-600 mb-4">Tienda online de polvos alimenticios instantáneos. Mezclalos con agua y disfruta de su sabor explosivo al momento.</p>
+                    <div class="flex justify-between items-center">
+                        <a href="https://danirv19.github.io/SaborFusion/" class="text-green-500 font-semibold hover:underline"><i class="fas fa-globe mr-1"></i> Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROYECTO 3 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-2xl transition hover:-translate-y-2 animate-fade-in-up delay-200">
+                <div class="relative">
+                    <img src="logo-primary.png" alt="OC Modus" class="w-full h-56 object-cover transition group-hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2">OC Modus</h3>
+                    <p class="text-gray-600 mb-4">Plataforma empresarial de productos veganos con  gestión de productos, área privada para administración y desarrollo web fullstack.</p>
+                    <div class="flex justify-between items-center">
+                        <a href="https://github.com/DaniRV19/OcModus.git" class="text-green-500 font-semibold hover:underline"><i class="fas fa-globe mr-1"></i> Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Puedes seguir duplicando para más proyectos -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Columna 1: Logo y descripción -->
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold">Daniel R.V</h3>
+                    <p class="text-gray-300">Desarrollador de aplicaciones web apasionado por crear soluciones digitales innovadoras y funcionales.</p>
+                    <div class="flex space-x-4 pt-2">
+                        <a href="https://www.linkedin.com/in/daniel-rodríguez-vázquez1" target="_blank" rel="noopener noreferrer" class="text-white hover:text-green-400 transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="https://github.com/DaniRV19" target="_blank" rel="noopener noreferrer" class="text-white hover:text-green-400 transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Columna 2: Enlaces rápidos -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-green-400 transition-colors">Inicio</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-green-400 transition-colors">Sobre mí</a></li>
+                        <li><a href="skills.html" class="text-gray-300 hover:text-green-400 transition-colors">Habilidades</a></li>
+                        <li><a href="projects.html" class="text-gray-300 hover:text-green-400 transition-colors">Proyectos</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-green-400 transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 3: Contacto -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Contacto</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-green-400"></i>
+                            <a class="text-gray-300 hover:text-green-400 transition-colors">danielrvazquez190805@gmail.com</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2 text-green-400"></i>
+                            <span class="text-gray-300 hover:text-green-400">+34 601 72 62 29</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-green-400"></i>
+                            <span class="text-gray-300 hover:text-green-400">Sevilla, España</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Línea divisoria -->
+            <div class="border-t border-gray-700 my-8"></div>
+            
+            <!-- Copyright -->
+            <div class="text-center text-gray-400">
+                <p>&copy; 2025 Daniel Rodríguez Vázquez. Todos los derechos reservados.</p>
+                <p class="mt-2 text-sm">Diseñado con <i class="fas fa-heart text-green-500"></i> y mucho café</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
