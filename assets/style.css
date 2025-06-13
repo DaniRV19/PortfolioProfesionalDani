@@ -300,3 +300,22 @@ footer a:hover .fab {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+
+
+
+
+
+
+
+
+body { 
+            background: linear-gradient(to right, #f0f4f8, #d9e4f5);
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #06b6d4, #22c55e);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
