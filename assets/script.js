@@ -48,9 +48,10 @@ function initSkills() {
         {name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', desc: 'Lenguaje de programación que añade interactividad a las webs.'},
         {name: 'PHP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg', desc: 'Lenguaje de backend ampliamente usado en desarrollo web.'},
         {name: 'SQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg', desc: 'Lenguaje para gestionar bases de datos.'},
-        {name: 'COBOL', icon: 'https://cdn.goconqr.com/uploads/slide_property/image/611324/desktop_ea5b95f6-8283-4618-8a97-26066b893687.jpg', desc: 'Lenguaje clásico usado en banca y grandes sistemas legacy.'},
+        {name: 'COBOL', icon: 'https://ih1.redbubble.net/image.957748405.3547/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg', desc: 'Lenguaje clásico usado en banca y grandes sistemas legacy.'},
         {name: 'Java', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg', desc: 'Lenguaje multiplataforma muy utilizado en empresas.'},
         {name: 'JSON', icon: 'https://img.icons8.com/color/48/json--v1.png', desc: 'Formato ligero para intercambio de datos.'}
+        {name: 'Python', icon: 'https://logos-world.net/wp-content/uploads/2021/10/Python-Emblem.png', desc: 'Lenguaje de programación de alto nivel, interpretado y de código abierto.'}
     ];
 
     const tools = [
