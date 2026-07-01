@@ -170,7 +170,7 @@ function initIntersectionObserver() {
 }
 
 // ===========================
-// Validación de formularios (si los usas en futuro)
+// Validación de formularios 
 // ===========================
 
 function initFormValidation() {
@@ -193,17 +193,6 @@ function initKeyboardModalClose() {
 // ===========================
 // Lazy loading imágenes
 // ===========================
-
-
-
-
-
-
-
-
-
-
-
 
 function initProjects() {
     const grid = document.getElementById('projects-grid');
