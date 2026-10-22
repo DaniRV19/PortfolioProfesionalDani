@@ -66,6 +66,7 @@ function initSkills() {
         {name: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', desc: 'Plataforma para alojar y colaborar en código.'},
         {name: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg', desc: 'Herramienta de diseño colaborativo para UI.'},
         {name: 'Laravel', icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM_cfPovQBKHCZx8fTdsxTxGyAcaQ63US_jLtRgwSntA&s=10', desc: 'Framework PHP elegante y potente.'},
+        {name: 'Spring Boot', icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdwWv5mMU7KNuLlEYmliX6h0qDGaAb1vO2tOPjeTHIUg&s=10', desc: 'Framework basado en Java que facilita y acelera la creación, configuración y despliegue de aplicaciones y microservicios.'},
         {name: 'Vue.js', icon: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg', desc: 'Framework progresivo de JavaScript para construir interfaces de usuario.'}
     ];
 
